@@ -4,6 +4,5 @@ class PirateController < ApplicationController
 
   def build
     @data = LootGrabber.new(params[:name])
-    render json: @data.page
   end
 end
